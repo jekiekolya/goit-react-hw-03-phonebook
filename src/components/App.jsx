@@ -19,7 +19,7 @@ export class App extends Component {
 
   componentDidMount() {
     const oldContacts = JSON.parse(localStorage.getItem('listContacts'));
-    this.setState({ contacts: oldContacts });
+    oldContacts && this.setState({ contacts: oldContacts });
   }
 
   addContact = contact => {
