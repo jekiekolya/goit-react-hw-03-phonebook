@@ -12,6 +12,7 @@ const init = {
   number: '',
 };
 
+
 class FormAddContact extends Component {
   state = {
     name: '',
